@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    float x = in.nextFloat();
+    float y = in.nextFloat();
+    System.out.println("Enter the operator +/-/* or /");
+    String operator = in.next();
+    if(operator.equals("+"))
+    {
+      System.out.println("The sum is " +(x+y));
+    }
+   if(operator.equals("-"))
+    {
+      if(x>y)
+       System.out.println("The difference is " +(x-y));
+      else
+         System.out.println("The difference is " +(y-x));   
+    }
+   if(operator.equals("*"))
+    {
+       System.out.println("The product is " +(x*y));
+    }
+    if(operator.equals("/"))
+      {
+      if(x>y)
+       System.out.println("The division is " +(x/y));
+      else
+         System.out.println("The division is " +(y/x));
+      }
+  }
+}
