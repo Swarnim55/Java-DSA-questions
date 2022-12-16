@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+  int num = input.nextInt();
+  int sum=0;
+  int count = 0;
+  for(int i = 1; i<=num;i++)
+    {
+      int numbers = input.nextInt();
+      sum = sum + numbers;
+      count++;
+    }
+  float avg = sum/count;
+  System.out.println("The averange of the given numbers is " +avg);
+}
+}
