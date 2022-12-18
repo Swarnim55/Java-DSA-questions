@@ -1,0 +1,23 @@
+//Find LCM and hcf of two numbers
+
+import java.util.Scanner;
+import java.lang.*;
+public class Main{
+  public static void main(String[] args)
+  {
+    Scanner in = new Scanner(System.in);
+    int a = in.nextInt();
+    int b = in.nextInt();
+    int hcf=0;
+    double lcm;
+    for(int i=1;i<=a || i<=b;i++)
+      {
+        if((a%i==0) && (b%i==0))
+          hcf = i;
+      }
+    lcm = (a*b)/(hcf);
+    int Intvalue = (int) Math.round(lcm);
+    System.out.println("LCM of two numbers is "+Intvalue);
+    System.out.println("HCF of two numbers is "+hcf);
+  }
+}
