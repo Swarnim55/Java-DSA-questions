@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        int EmpId = in.nextInt();
+        String department = in.next();
+        switch (EmpId) {
+        case 1:
+              System.out.println("Arunika");
+              break;
+        case 2:
+              System.out.println("Devang");
+              break;
+        case 3:
+             System.out.println("EmpId is 3");
+             switch(department) {
+               case "IT":
+                 System.out.println("Tanu");
+                 System.out.println("IT department");
+                 break;
+               case "CSIT":
+                 System.out.println("Arunika");
+                 System.out.println("CSIT department");
+                 break;
+               case "ME":
+                 System.out.println("Devang");
+                 System.out.println("Mechanical department");
+                 break;
+              default : System.out.println("Wrong id");
+             }
+            break;
+            default : System.out.println("Wrong id");
+      }
+    }
+}
