@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int a = in.nextInt();
+    boolean result = isArmstrong(a);
+    System.out.println(result);  
+  }
+  static boolean isArmstrong(int n)
+  {
+    int ans;
+    double sum = 0;
+    int original = n;
+    while(n>0)
+      {
+       ans = n % 10;
+       sum = sum + Math.pow(ans,3);
+       n = n /10;
+      }
+    if(sum == original)
+      return true;
+    else
+      return false;
+ }
+}
