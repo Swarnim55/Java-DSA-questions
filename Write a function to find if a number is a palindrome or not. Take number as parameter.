@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    boolean res = isPallindrome(a);
+    System.out.println(res);
+  }
+  static boolean isPallindrome(int n) 
+  {
+    int ans;
+    int rem = 0;
+    int original = n;
+    while(n>0)
+      {
+       ans = n % 10;
+       rem = rem * 10 + ans;
+       n = n / 10;
+      } 
+    if(rem == original)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+}
