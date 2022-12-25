@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = sc.nextInt();
+    boolean res = isCheck(a,b,c);
+    System.out.println(res);
+  }
+  static boolean isCheck(int a , int b, int c) 
+  {
+    if(c*c == a*a + b*b)
+    {
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
