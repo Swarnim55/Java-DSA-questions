@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int sum = Sumofnum(a);
+    System.out.println(sum);
+  }
+  static int Sumofnum(int n)
+  {
+    int ans,sum =0;
+    while(n>0)
+    {
+    ans = n % 10;
+    sum = sum + ans;
+    n = n/10;
+    }
+    return sum;
+  }
+}
