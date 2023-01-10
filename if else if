@@ -1,0 +1,60 @@
+
+/*Marks        Grade 
+91-100         AA 
+81-90          AB 
+71-80          BB 
+61-70          BC 
+51-60          CD 
+41-50          DD 
+<=40          Fail *\
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    String Grades = Grades(a);
+    System.out.println(Grades);
+  }
+
+
+   static String Grades(int marks) 
+  {
+    String g =" ";
+    if(marks >= 91 && marks <=100)
+    {
+      g = "AA";
+      return g;
+    }
+     else if(marks >= 81 && marks<=90)
+    {
+      g= "AB";
+      return g;
+    }
+     else if(marks>=71 && marks<=80)
+    {
+    g = "BB";
+    return g;
+    }
+     else if(marks>=61 && marks<=70)
+    {
+    g = "BC";
+    return g;
+    }
+    else if(marks>=51 && marks<=60)
+    {
+    g = "CD";
+    return g;
+    }
+    else if(marks>=41 && marks<=50)
+    {
+    g = "DD";
+    return g;
+    }
+    else
+    {
+    g = "Fail";
+    return g;
+    }
+  }
+}
