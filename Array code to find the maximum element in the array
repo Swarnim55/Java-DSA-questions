@@ -1,0 +1,20 @@
+import java.util.Arrays;
+public class first {
+    public static void main(String[] args) {
+        int [] arr = {1,5,7,9,2};
+        int max = max(arr);
+
+        System.out.println(max);
+        }
+        static int max(int[] arr)
+        {
+          int m = arr[0];
+          int i;
+          for(i = 1 ; i<arr.length ; i++)
+          {
+            if(m<arr[i])
+            m = arr[i];
+          } 
+          return m; 
+        }
+      }
