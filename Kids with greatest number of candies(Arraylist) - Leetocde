@@ -1,0 +1,30 @@
+candies is an array of integers. candies[i] is the element at index i in the array.
+extraCandies is a variable that holds an integer value.
+candies[i] + extraCandies is the sum of the element at index i in the candies array and the value of extraCandies.
+candies[i] + extraCandies >= max is a comparison that returns a boolean value, true if the sum is greater than or equal to max, false otherwise.
+(candies[i] + extraCandies >= max) is the boolean result of the comparison
+list.add(i, (candies[i] + extraCandies >= max)) is adding the result of the comparison to the List<Boolean> at the index i.
+So, this code is adding a boolean value indicating whether the sum of the element of the candies array at the index i and extraCandies is greater or equal than max to the list at the same index.
+
+class Solution {
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        
+        List<Boolean> list = new ArrayList<Boolean> (candies.length);
+        int n = candies.length;
+        
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i < n; i++){
+            
+            if(candies[i] > max)
+                max = candies[i];
+        }
+        
+        for(int i = 0; i < n; i++){
+            list.add(i, (candies[i] + extraCandies >= max));
+        }
+          return list;
+    }
+    
+}
+
+
