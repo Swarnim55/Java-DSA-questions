@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+public class first {
+//ArrayList
+    public static void main(String[] args) {
+    ArrayList<Integer> list = new ArrayList<>(10);
+    //adding elements in the list
+    list.add(48);
+    list.add(48);
+    list.add(48);
+    list.add(48);
+    list.add(48);
+    list.add(48);
+
+        System.out.print(list); 
+      }
+    }
