@@ -1,0 +1,29 @@
+package com.properties.inheritance;
+
+public class Box {
+    public int l;
+    public int b;
+    public int h;
+
+    public Box()
+    {
+        this.l = 4;
+        this.b = 6;
+        this.h = 7;
+    }
+    
+    public Box(int side)
+    {
+        this.l = side;
+        this.b = side;
+        this.h = side;
+    }
+
+   public Box(int l,int b , int h)
+    {
+        this.l = l;
+        this.b = b;
+        this.h = h;
+    }   
+}
+
